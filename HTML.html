@@ -1,0 +1,707 @@
+<html class="light" style="color-scheme: light">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title>HTML Structure &amp; Syntax.</title>
+    <meta name="next-head-count" content="3" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link
+      rel="preload"
+      href="/fonts/Signifier-Regular.otf"
+      as="font"
+      crossorigin=""
+    />
+    <link rel="preload" href="/fonts/Sohne-Buch.otf" as="font" crossorigin="" />
+    <link
+      rel="preload"
+      href="/fonts/Sohne-Halbfett.otf"
+      as="font"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="/fonts/SohneMono-Buch.otf"
+      as="font"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="/fonts/SohneMono-Halbfett.otf"
+      as="font"
+      crossorigin=""
+    />
+    <link rel="preload" href="fonts/KaTeX_Caligraphic-Bold.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Caligraphic-Regular.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Fraktur-Bold.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Fraktur-Regular.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Main-Bold.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Main-BoldItalic.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Main-Italic.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Main-Regular.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Math-BoldItalic.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Math-Italic.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_SansSerif-Bold.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_SansSerif-Italic.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_SansSerif-Regular.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Script-Regular.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Size1-Regular.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Size2-Regular.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Size3-Regular.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Size4-Regular.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Typewriter-Regular.woff" as="font" />
+    <link rel="stylesheet" href="./index.css" />
+    <noscript data-n-css=""></noscript>
+    <style data-emotion="react-scroll-to-bottom--css-tfgfd" data-s=""></style>
+  </head>
+
+  <body>
+    <h1>Introduction to HTML and Webdevelopment</h1>
+    <div class="markdown prose w-full break-words dark:prose-invert light">
+      <p>
+        HTML, or Hypertext Markup Language, is the standard language used to
+        create web pages. It is a markup language that uses a set of tags and
+        attributes to define the structure, content, and presentation of a web
+        page.
+      </p>
+      <p>
+        Web development involves creating and designing websites using a variety
+        of technologies, including HTML, CSS (Cascading Style Sheets), and
+        JavaScript. HTML provides the foundation for web development, while CSS
+        is used to style and format the content, and JavaScript is used for
+        dynamic and interactive elements.
+      </p>
+      <p>
+        HTML is a relatively easy language to learn, and it provides a basic
+        understanding of how web pages are structured. Web pages are made up of
+        several elements, such as headings, paragraphs, images, links, and
+        lists, which are defined using HTML tags. HTML tags are enclosed in
+        angle brackets (&lt;&gt;) and come in pairs, with the opening tag
+        preceding the content and the closing tag following it.
+      </p>
+      <p>
+        Web development also involves understanding the principles of design and
+        layout. Effective web design involves creating an aesthetically pleasing
+        and easy-to-use interface that helps users find the information they
+        need quickly and easily. This is achieved by using design principles
+        such as typography, color theory, and layout to create a consistent and
+        visually appealing user interface.
+      </p>
+      <p>
+        In addition to HTML, CSS is used to style and format web pages. CSS
+        defines the visual properties of HTML elements, such as font, color, and
+        layout. By using CSS, developers can create a consistent look and feel
+        across a website, making it easier for users to navigate and find the
+        information they need.
+      </p>
+      <p>
+        Finally, JavaScript is used to add dynamic and interactive elements to
+        web pages. JavaScript can be used to create animations, validate user
+        input, and add interactivity to a website. By using JavaScript,
+        developers can create engaging and interactive web experiences that keep
+        users engaged and interested.
+      </p>
+      <p>
+        In conclusion, HTML is the foundation of web development, and it is
+        essential for anyone looking to create web pages. Web development
+        involves understanding the principles of design and layout, as well as
+        using CSS to style and format web pages, and JavaScript to add dynamic
+        and interactive elements. With these skills, developers can create
+        engaging and user-friendly websites that meet the needs of users and
+        businesses alike.
+      </p>
+    </div>
+    <h1>HTML structure and Syntax</h1>
+    <div class="markdown prose w-full break-words dark:prose-invert light">
+      <p>
+        HTML (HyperText Markup Language) is a markup language used to create and
+        structure content for the web. It is the backbone of every website and
+        defines the structure and layout of the content that is displayed on a
+        web page. HTML documents are made up of elements, which define the
+        different parts of a page. Here is an overview of HTML structure and
+        syntax.
+      </p>
+      <p>HTML Structure:</p>
+      <p>
+        An HTML document is composed of several elements, including the
+        <code>doctype</code>, <code>html</code>, <code>head</code>, and
+        <code>body</code> elements. Here is an example of a basic HTML
+        structure:
+      </p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">php</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-php-template"><span class="xml"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Page Title<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Heading 1<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Paragraph Text<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+      </span></code></div></div></pre>
+      <p>
+        The <code>&lt;!DOCTYPE html&gt;</code> declaration at the beginning of
+        the document tells the browser that this is an HTML document. The
+        <code>html</code> element is the root element of an HTML page and
+        contains two child elements, <code>head</code> and <code>body</code>.
+        The <code>head</code> element contains meta information about the
+        document, including the page title, while the <code>body</code> element
+        contains the visible content of the web page.
+      </p>
+      <p>HTML Syntax:</p>
+      <p>
+        HTML elements are surrounded by angled brackets
+        <code>&lt;&gt;</code> and can have attributes that provide additional
+        information about the element. Here is an example of an HTML element
+        with an attribute:
+      </p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">csharp</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-csharp">&lt;p <span class="hljs-keyword">class</span>=<span class="hljs-string">"intro"</span>&gt;This <span class="hljs-keyword">is</span> a paragraph element <span class="hljs-keyword">with</span> a <span class="hljs-keyword">class</span> <span class="hljs-title">attribute</span>&lt;/<span class="hljs-title">p</span>&gt;
+      </code></div></div></pre>
+      <p>
+        In this example, the <code>p</code> element defines a paragraph and the
+        <code>class</code> attribute is used to define a class for the element.
+        The value of the <code>class</code> attribute is "intro".
+      </p>
+      <p>Some commonly used HTML elements and their syntax include:</p>
+      <ul>
+        <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> for headings</li>
+        <li><code>&lt;p&gt;</code> for paragraphs</li>
+        <li><code>&lt;a&gt;</code> for links</li>
+        <li><code>&lt;img&gt;</code> for images</li>
+        <li>
+          <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> for unordered and
+          ordered lists, respectively
+        </li>
+        <li><code>&lt;li&gt;</code> for list items</li>
+        <li>
+          <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> for grouping
+          and styling content
+        </li>
+      </ul>
+      <p>
+        HTML also allows for comments to be added to the code using
+        <code>&lt;!-- --&gt;</code>:
+      </p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">php</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-php-template"><span class="xml"><span class="hljs-comment">&lt;!-- This is a comment --&gt;</span>
+      </span></code></div></div></pre>
+      <p>
+        Comments are not displayed on the web page but can be useful for adding
+        notes to the code for other developers or for troubleshooting.
+      </p>
+      <p>
+        In conclusion, HTML is the backbone of web development and understanding
+        its structure and syntax is crucial to creating well-formed and
+        accessible web pages. By following the basic HTML structure and syntax,
+        you can create web pages that are easy to read, navigate, and
+        understand.
+      </p>
+    </div>
+    <h1>Headings Paragraph and Text Formatting</h1>
+    <div class="markdown prose w-full break-words dark:prose-invert light">
+      <p>
+        In HTML, you can use various elements to format your text, including
+        headings, paragraphs, and text formatting. These elements are essential
+        for structuring and presenting your content in a clear and organized
+        way.
+      </p>
+      <p>Headings:</p>
+      <p>
+        HTML offers six levels of headings, from <code>h1</code> to
+        <code>h6</code>. The <code>h1</code> tag is the most significant and is
+        usually reserved for the page title, while the <code>h2</code> tag is
+        used for section titles and so on. Here's an example of how to use
+        headings:
+      </p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css">&lt;<span class="hljs-selector-tag">h1</span>&gt;Page Title&lt;/<span class="hljs-selector-tag">h1</span>&gt;
+      &lt;<span class="hljs-selector-tag">h2</span>&gt;<span class="hljs-selector-tag">Section</span> Title&lt;/<span class="hljs-selector-tag">h2</span>&gt;
+      &lt;<span class="hljs-selector-tag">h3</span>&gt;Subsection Title&lt;/<span class="hljs-selector-tag">h3</span>&gt;
+      </code></div></div></pre>
+      <p>
+        By default, headings are displayed in bold and larger than normal text.
+        It's worth noting that headings not only help to structure your content
+        but are also useful for search engines to understand the hierarchy of
+        your content.
+      </p>
+      <p>Paragraphs:</p>
+      <p>
+        To create a paragraph in HTML, use the <code>p</code> element. Here's an
+        example:
+      </p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css">&lt;<span class="hljs-selector-tag">p</span>&gt;This is <span class="hljs-selector-tag">a</span> paragraph of text.&lt;/<span class="hljs-selector-tag">p</span>&gt;
+      </code></div></div></pre>
+      <p>
+        Paragraphs are a great way to present your content in a structured and
+        organized way. By default, paragraphs have a blank line above and below
+        them to help visually separate them from other content.
+      </p>
+      <p>Text Formatting:</p>
+      <p>
+        HTML provides several elements for formatting text. Here are some
+        commonly used ones:
+      </p>
+      <ul>
+        <li>
+          <code>&lt;strong&gt;</code> and <code>&lt;b&gt;</code> - Bold text
+        </li>
+        <li>
+          <code>&lt;em&gt;</code> and <code>&lt;i&gt;</code> - Italicized text
+        </li>
+        <li><code>&lt;u&gt;</code> - Underlined text</li>
+        <li>
+          <code>&lt;s&gt;</code> and <code>&lt;del&gt;</code> - Strikethrough
+          text
+        </li>
+        <li>
+          <code>&lt;sup&gt;</code> and <code>&lt;sub&gt;</code> - Superscript
+          and subscript text
+        </li>
+      </ul>
+      <p>For example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">php</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-php-template"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span>Bold text<span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span> and <span class="hljs-tag">&lt;<span class="hljs-name">em</span>&gt;</span>italicized text<span class="hljs-tag">&lt;/<span class="hljs-name">em</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>This text is <span class="hljs-tag">&lt;<span class="hljs-name">u</span>&gt;</span>underlined<span class="hljs-tag">&lt;/<span class="hljs-name">u</span>&gt;</span> and this is <span class="hljs-tag">&lt;<span class="hljs-name">s</span>&gt;</span>strikethrough<span class="hljs-tag">&lt;/<span class="hljs-name">s</span>&gt;</span> text.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Superscript: H<span class="hljs-tag">&lt;<span class="hljs-name">sub</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">sub</span>&gt;</span>O<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+      </span></code></div></div></pre>
+      <p>
+        It's worth noting that the tags <code>&lt;b&gt;</code>,
+        <code>&lt;i&gt;</code>, <code>&lt;s&gt;</code>, and
+        <code>&lt;u&gt;</code> should be avoided in favor of their more
+        semantically meaningful counterparts (<code>&lt;strong&gt;</code>,
+        <code>&lt;em&gt;</code>, <code>&lt;del&gt;</code>, and
+        <code>&lt;u&gt;</code>). This is because the latter tags convey both
+        visual and semantic meaning to both humans and machines.
+      </p>
+      <p>
+        In conclusion, headings, paragraphs, and text formatting are essential
+        elements for organizing and presenting your content in HTML. By using
+        them correctly, you can create visually appealing and accessible web
+        pages that are easy to read and understand.
+      </p>
+    </div>
+    <h1>Lists Links and Images</h1>
+    <div class="markdown prose w-full break-words dark:prose-invert light">
+      <p>
+        In HTML, you can use various elements to create lists, links, and
+        images. These elements are important for presenting content in a
+        well-organized and visually appealing way.
+      </p>
+      <p>Lists:</p>
+      <p>
+        HTML offers two types of lists: ordered and unordered. An ordered list
+        (<code>&lt;ol&gt;</code>) is a numbered list, while an unordered list
+        (<code>&lt;ul&gt;</code>) is a bulleted list. Here's an example of how
+        to use lists:
+      </p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css">&lt;<span class="hljs-selector-tag">ul</span>&gt;
+      &lt;<span class="hljs-selector-tag">li</span>&gt;Bullet point <span class="hljs-number">1</span>&lt;/<span class="hljs-selector-tag">li</span>&gt;
+      &lt;<span class="hljs-selector-tag">li</span>&gt;Bullet point <span class="hljs-number">2</span>&lt;/<span class="hljs-selector-tag">li</span>&gt;
+      &lt;<span class="hljs-selector-tag">li</span>&gt;Bullet point <span class="hljs-number">3</span>&lt;/<span class="hljs-selector-tag">li</span>&gt;
+    &lt;/<span class="hljs-selector-tag">ul</span>&gt;
+    
+    &lt;<span class="hljs-selector-tag">ol</span>&gt;
+      &lt;<span class="hljs-selector-tag">li</span>&gt;Numbered point <span class="hljs-number">1</span>&lt;/<span class="hljs-selector-tag">li</span>&gt;
+      &lt;<span class="hljs-selector-tag">li</span>&gt;Numbered point <span class="hljs-number">2</span>&lt;/<span class="hljs-selector-tag">li</span>&gt;
+      &lt;<span class="hljs-selector-tag">li</span>&gt;Numbered point <span class="hljs-number">3</span>&lt;/<span class="hljs-selector-tag">li</span>&gt;
+    &lt;/<span class="hljs-selector-tag">ol</span>&gt;
+    </code></div></div></pre>
+      <p>Links:</p>
+      <p>
+        HTML provides the <code>&lt;a&gt;</code> element to create links. Here's
+        an example:
+      </p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">php</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-php-template"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"https://www.example.com"</span>&gt;</span>Link Text<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    </span></code></div></div></pre>
+      <p>
+        The <code>href</code> attribute specifies the URL that the link points
+        to, and the link text is the text that is displayed on the web page. You
+        can also use the <code>target</code> attribute to specify where the link
+        should open, such as in a new tab or window.
+      </p>
+      <p>Images:</p>
+      <p>
+        To add an image to an HTML page, use the
+        <code>&lt;img&gt;</code> element. Here's an example:
+      </p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">php</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-php-template"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"image.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Image Description"</span>&gt;</span>
+    </span></code></div></div></pre>
+      <p>
+        The <code>src</code> attribute specifies the URL of the image, and the
+        <code>alt</code> attribute provides a description of the image for
+        accessibility purposes. It's important to use descriptive alt text for
+        images to ensure that users with screen readers can understand the
+        content of the page.
+      </p>
+      <p>
+        In conclusion, lists, links, and images are important elements for
+        organizing and presenting content in HTML. By using them correctly, you
+        can create web pages that are both visually appealing and accessible to
+        all users.
+      </p>
+    </div>
+    <h1>Tables and Forms</h1>
+    <div>
+      <div class="markdown prose w-full break-words dark:prose-invert light">
+        <p>
+          In HTML, you can use tables and forms to present data and collect user
+          input.
+        </p>
+        <p>Tables:</p>
+        <p>
+          HTML provides the <code>&lt;table&gt;</code> element to create tables.
+          Here's an example:
+        </p>
+        <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css">&lt;<span class="hljs-selector-tag">table</span>&gt;
+      &lt;<span class="hljs-selector-tag">thead</span>&gt;
+        &lt;<span class="hljs-selector-tag">tr</span>&gt;
+          &lt;<span class="hljs-selector-tag">th</span>&gt;Column <span class="hljs-number">1</span>&lt;/<span class="hljs-selector-tag">th</span>&gt;
+          &lt;<span class="hljs-selector-tag">th</span>&gt;Column <span class="hljs-number">2</span>&lt;/<span class="hljs-selector-tag">th</span>&gt;
+          &lt;<span class="hljs-selector-tag">th</span>&gt;Column <span class="hljs-number">3</span>&lt;/<span class="hljs-selector-tag">th</span>&gt;
+        &lt;/<span class="hljs-selector-tag">tr</span>&gt;
+      &lt;/<span class="hljs-selector-tag">thead</span>&gt;
+      &lt;<span class="hljs-selector-tag">tbody</span>&gt;
+        &lt;<span class="hljs-selector-tag">tr</span>&gt;
+          &lt;<span class="hljs-selector-tag">td</span>&gt;Row <span class="hljs-number">1</span>, Cell <span class="hljs-number">1</span>&lt;/<span class="hljs-selector-tag">td</span>&gt;
+          &lt;<span class="hljs-selector-tag">td</span>&gt;Row <span class="hljs-number">1</span>, Cell <span class="hljs-number">2</span>&lt;/<span class="hljs-selector-tag">td</span>&gt;
+          &lt;<span class="hljs-selector-tag">td</span>&gt;Row <span class="hljs-number">1</span>, Cell <span class="hljs-number">3</span>&lt;/<span class="hljs-selector-tag">td</span>&gt;
+        &lt;/<span class="hljs-selector-tag">tr</span>&gt;
+        &lt;<span class="hljs-selector-tag">tr</span>&gt;
+          &lt;<span class="hljs-selector-tag">td</span>&gt;Row <span class="hljs-number">2</span>, Cell <span class="hljs-number">1</span>&lt;/<span class="hljs-selector-tag">td</span>&gt;
+          &lt;<span class="hljs-selector-tag">td</span>&gt;Row <span class="hljs-number">2</span>, Cell <span class="hljs-number">2</span>&lt;/<span class="hljs-selector-tag">td</span>&gt;
+          &lt;<span class="hljs-selector-tag">td</span>&gt;Row <span class="hljs-number">2</span>, Cell <span class="hljs-number">3</span>&lt;/<span class="hljs-selector-tag">td</span>&gt;
+        &lt;/<span class="hljs-selector-tag">tr</span>&gt;
+      &lt;/<span class="hljs-selector-tag">tbody</span>&gt;
+    &lt;/<span class="hljs-selector-tag">table</span>&gt;
+    </code></div></div></pre>
+        <p>
+          In this example, the table has a header (<code>&lt;thead&gt;</code>)
+          and body (<code>&lt;tbody&gt;</code>) section. The header contains a
+          row (<code>&lt;tr&gt;</code>) with column headers
+          (<code>&lt;th&gt;</code>), while the body contains rows with data
+          cells (<code>&lt;td&gt;</code>). You can also use the
+          <code>colspan</code> and <code>rowspan</code> attributes to merge
+          cells as needed.
+        </p>
+        <p>Forms:</p>
+        <p>
+          HTML provides a variety of form elements to collect user input,
+          including text input, checkboxes, radio buttons, and select boxes.
+          Here's an example:
+        </p>
+        <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">php</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-php-template"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"name"</span>&gt;</span>Name:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"name"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"name"</span>&gt;</span>
+    
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"email"</span>&gt;</span>Email:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"email"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"email"</span>&gt;</span>
+    
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"message"</span>&gt;</span>Message:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"message"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"message"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+    
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"gender"</span>&gt;</span>Gender:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"male"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"gender"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"male"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"male"</span>&gt;</span>Male<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"radio"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"female"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"gender"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"female"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"female"</span>&gt;</span>Female<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+    
+      <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"interests"</span>&gt;</span>Interests:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"interests"</span> <span class="hljs-attr">name</span>=<span class="hljs-string">"interests"</span> <span class="hljs-attr">multiple</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"music"</span>&gt;</span>Music<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"sports"</span>&gt;</span>Sports<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"movies"</span>&gt;</span>Movies<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+    
+      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"submit"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"Submit"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+    </span></code></div></div></pre>
+        <p>
+          In this example, the form contains several input elements, including
+          text inputs (<code>&lt;input type="text"&gt;</code>), email inputs
+          (<code>&lt;input type="email"&gt;</code>), textareas
+          (<code>&lt;textarea&gt;</code>), radio buttons (<code
+            >&lt;input type="radio"&gt;</code
+          >), and a select box (<code>&lt;select&gt;</code>). You can also use
+          the <code>multiple</code> attribute to allow users to select multiple
+          options in a select box. The form includes a submit button (<code
+            >&lt;input type="submit"&gt;</code
+          >) that allows the user to submit the form data.
+        </p>
+        <p>
+          In conclusion, tables and forms are important elements for presenting
+          data and collecting user input in HTML. By using them correctly, you
+          can create web pages that are both informative and interactive.
+        </p>
+      </div>
+    </div>
+    <h1>Semantics</h1>
+    <div class="markdown prose w-full break-words dark:prose-invert light">
+      <p>
+        HTML semantic elements are elements that provide meaning and structure
+        to the content of a web page. They are designed to improve the
+        accessibility, SEO, and maintainability of the page. Here are some of
+        the most commonly used semantic elements:
+      </p>
+      <ol>
+        <li>
+          <p>
+            <code>&lt;header&gt;</code>: This element represents the header of a
+            section or page. It can contain the logo, navigation links, and
+            other introductory content.
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>&lt;footer&gt;</code>: This element represents the footer of a
+            section or page. It can contain copyright information, contact
+            details, and other concluding content.
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>&lt;nav&gt;</code>: This element represents the navigation
+            links for a section or page. It can contain links to different
+            sections of the site or to external sites.
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>&lt;article&gt;</code>: This element represents a
+            self-contained piece of content, such as a blog post or news
+            article. It can include a heading, byline, and other content.
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>&lt;section&gt;</code>: This element represents a section of
+            content within a larger document. It can include a heading and other
+            related content.
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>&lt;aside&gt;</code>: This element represents content that is
+            related to the main content but not central to it. It can include
+            sidebars, callouts, and other content.
+          </p>
+        </li>
+        <li>
+          <p>
+            <code>&lt;main&gt;</code>: This element represents the main content
+            of a document. It should only be used once per page.
+          </p>
+        </li>
+      </ol>
+      <p>
+        Using these semantic elements can help improve the accessibility of your
+        website by making it easier for assistive technologies to navigate and
+        understand the structure of your content. They can also help with SEO by
+        providing search engines with a better understanding of your content.
+        Finally, they can improve the maintainability of your website by making
+        it easier to update and modify the content of your pages.
+      </p>
+    </div>
+    <h1>Block vs Inline element</h1>
+    <div class="markdown prose w-full break-words dark:prose-invert light">
+      <p>
+        In HTML, elements can be classified as either block-level elements or
+        inline-level elements based on their display behavior. This
+        classification affects how the elements are displayed and how they
+        interact with other elements on the page.
+      </p>
+      <p>Block-level elements:</p>
+      <p>
+        Block-level elements typically begin on a new line and take up the full
+        width of their parent container. Some common block-level elements
+        include headings (<code>&lt;h1&gt;</code>-<code>&lt;h6&gt;</code>),
+        paragraphs (<code>&lt;p&gt;</code>), divs (<code>&lt;div&gt;</code>),
+        lists (<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>,
+        <code>&lt;dl&gt;</code>), and sections (<code>&lt;section&gt;</code>,
+        <code>&lt;article&gt;</code>, <code>&lt;nav&gt;</code>,
+        <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>). Block-level
+        elements can contain other block-level elements or inline-level
+        elements, as well as text and other content.
+      </p>
+      <p>Inline-level elements:</p>
+      <p>
+        Inline-level elements typically flow within the text of a document and
+        only take up the necessary space required by their content. Some common
+        inline-level elements include links (<code>&lt;a&gt;</code>), spans
+        (<code>&lt;span&gt;</code>), images (<code>&lt;img&gt;</code>), and text
+        formatting elements such as bold (<code>&lt;strong&gt;</code>) and
+        italic (<code>&lt;em&gt;</code>). Inline-level elements can only contain
+        other inline-level elements or text, but not block-level elements.
+      </p>
+      <p>
+        The main differences between block-level and inline-level elements are
+        their display behavior and the way they interact with other elements on
+        the page. Block-level elements are displayed as a rectangular block,
+        taking up the full width of their parent container, while inline-level
+        elements flow within the text and take up only the necessary space
+        required by their content. Block-level elements also affect the layout
+        of other elements on the page, pushing adjacent elements down and taking
+        up vertical space. Inline-level elements, on the other hand, do not
+        affect the layout of other elements, and they can appear next to each
+        other on the same line.
+      </p>
+      <p>
+        Understanding the difference between block-level and inline-level
+        elements is important for creating well-structured and visually
+        appealing web pages. By using the appropriate elements and understanding
+        their behavior, you can create a layout that is easy to read, navigate,
+        and interact with.
+      </p>
+    </div>
+    <h1>Responsive design and CSS integration</h1>
+    <div class="markdown prose w-full break-words dark:prose-invert light">
+      <p>
+        HTML responsive design and CSS integration are two essential components
+        for creating modern, flexible, and accessible websites. In combination,
+        they allow developers to create web pages that can adjust to different
+        screen sizes and device types, provide an optimal user experience, and
+        present content in a visually appealing way.
+      </p>
+      <p>HTML Responsive Design:</p>
+      <p>
+        HTML responsive design is a technique that allows web pages to adapt to
+        different screen sizes and device types, providing an optimal viewing
+        experience for users. This is achieved by using HTML and CSS to create a
+        flexible layout that can adjust to the dimensions of the viewport. HTML
+        responsive design often includes the use of media queries, which are CSS
+        rules that allow developers to specify different styles for different
+        screen sizes.
+      </p>
+      <p>
+        Media queries can be used to adjust the layout, typography, and other
+        design elements of a web page, making it more legible and accessible on
+        small screens such as smartphones and tablets. For example, a media
+        query might adjust the font size or the width of the page's columns to
+        better fit the screen size. By creating responsive web pages, developers
+        can ensure that their content is accessible to a wider range of users,
+        regardless of the device they are using.
+      </p>
+      <p>CSS Integration:</p>
+      <p>
+        CSS is a styling language that is used to control the presentation of
+        HTML elements on a web page. CSS can be used to define colors, fonts,
+        margins, borders, and other visual aspects of a page's layout and
+        design. By integrating CSS into an HTML document, developers can
+        separate the presentation of a page from its content, making it easier
+        to maintain and update.
+      </p>
+      <p>
+        CSS can be integrated into an HTML document in several ways, including
+        using external style sheets, embedded styles, or inline styles. External
+        style sheets are the most common method and involve creating a separate
+        CSS file that is linked to the HTML document using a
+        <code>&lt;link&gt;</code> element in the document's
+        <code>&lt;head&gt;</code> section. Embedded styles and inline styles are
+        used less frequently but can be useful for applying styles to specific
+        elements or sections of a page.
+      </p>
+      <p>
+        By using CSS to define the visual aspects of a web page, developers can
+        create a consistent and professional look and feel across their website.
+        They can also create responsive and flexible designs that can adapt to
+        different screen sizes and device types, improving the user experience
+        and accessibility of their website.
+      </p>
+      <p>
+        In summary, HTML responsive design and CSS integration are two essential
+        components of modern web development. By using these techniques,
+        developers can create web pages that are flexible, accessible, and
+        visually appealing, ensuring that their content is accessible to a wide
+        range of users across different devices and screen sizes.
+      </p>
+    </div>
+    <h1>Best practices and tips for creating accessible HTML websites</h1>
+    <div class="markdown prose w-full break-words dark:prose-invert light">
+      <p>
+        Creating accessible HTML websites means designing and developing
+        websites that can be used and understood by a broad range of users,
+        including those with disabilities. Here are some best practices and tips
+        for creating accessible HTML websites:
+      </p>
+      <ol>
+        <li>
+          <p>
+            Use semantic HTML: Use semantic HTML tags to provide meaningful
+            information about the content of your website. For example, use
+            <code>&lt;h1&gt;</code> for main headings,
+            <code>&lt;p&gt;</code> for paragraphs, and
+            <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> for lists.
+            Semantic HTML helps assistive technologies such as screen readers to
+            navigate and understand the content of your website.
+          </p>
+        </li>
+        <li>
+          <p>
+            Provide text alternatives for non-text content: Provide text
+            alternatives for non-text content such as images, videos, and audio
+            files. This can be done by using the
+            <code>&lt;alt&gt;</code> attribute for images and
+            <code>&lt;track&gt;</code> element for video and audio files.
+          </p>
+        </li>
+        <li>
+          <p>
+            Use appropriate color contrast: Ensure that there is enough contrast
+            between text and background colors. This helps users with low vision
+            or color blindness to read and navigate your website easily.
+          </p>
+        </li>
+        <li>
+          <p>
+            Provide captions and transcripts for video and audio content: For
+            users who are deaf or hard of hearing, provide captions for video
+            and transcripts for audio content. This makes your website more
+            accessible and provides a better user experience.
+          </p>
+        </li>
+        <li>
+          <p>
+            Ensure keyboard accessibility: Ensure that your website can be
+            navigated using the keyboard alone. This is essential for users who
+            cannot use a mouse or other pointing device.
+          </p>
+        </li>
+        <li>
+          <p>
+            Use clear and concise language: Use clear and concise language to
+            make your website easy to understand for all users, regardless of
+            their literacy level.
+          </p>
+        </li>
+        <li>
+          <p>
+            Avoid using flashing or moving content: Flashing or moving content
+            can trigger seizures in users with epilepsy. Avoid using such
+            content, or provide a way to turn it off.
+          </p>
+        </li>
+        <li>
+          <p>
+            Provide clear and consistent navigation: Use clear and consistent
+            navigation to help users easily find the information they are
+            looking for. This can be achieved by using a clear hierarchy of
+            headings, using breadcrumbs, and providing a sitemap.
+          </p>
+        </li>
+        <li>
+          <p>
+            Test for accessibility: Regularly test your website for
+            accessibility using tools such as WebAIM's WAVE tool, to ensure that
+            your website is accessible to all users.
+          </p>
+        </li>
+      </ol>
+      <p>
+        In conclusion, creating accessible HTML websites is essential to ensure
+        that everyone can use and understand your website. By following these
+        best practices and tips, you can create a website that is accessible and
+        provides a great user experience for all users.
+      </p>
+    </div>
+  </body>
+</html>
