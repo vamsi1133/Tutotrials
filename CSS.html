@@ -1,0 +1,805 @@
+<html class="light" style="color-scheme: light">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <title>CSS Tutorial.</title>
+    <meta name="next-head-count" content="3" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link
+      rel="preload"
+      href="/fonts/Signifier-Regular.otf"
+      as="font"
+      crossorigin=""
+    />
+    <link rel="preload" href="/fonts/Sohne-Buch.otf" as="font" crossorigin="" />
+    <link
+      rel="preload"
+      href="/fonts/Sohne-Halbfett.otf"
+      as="font"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="/fonts/SohneMono-Buch.otf"
+      as="font"
+      crossorigin=""
+    />
+    <link
+      rel="preload"
+      href="/fonts/SohneMono-Halbfett.otf"
+      as="font"
+      crossorigin=""
+    />
+    <link rel="preload" href="fonts/KaTeX_Caligraphic-Bold.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Caligraphic-Regular.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Fraktur-Bold.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Fraktur-Regular.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Main-Bold.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Main-BoldItalic.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Main-Italic.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Main-Regular.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Math-BoldItalic.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Math-Italic.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_SansSerif-Bold.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_SansSerif-Italic.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_SansSerif-Regular.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Script-Regular.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Size1-Regular.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Size2-Regular.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Size3-Regular.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Size4-Regular.woff" as="font" />
+    <link rel="preload" href="fonts/KaTeX_Typewriter-Regular.woff" as="font" />
+    <link rel="stylesheet" href="./index.css" />
+    <noscript data-n-css=""></noscript>
+    <style data-emotion="react-scroll-to-bottom--css-tfgfd" data-s=""></style>
+  </head>
+  <body>
+    <h1>CSS Introduction</h1>
+    <div class="markdown prose w-full break-words dark:prose-invert light">
+      <p>
+        CSS (Cascading Style Sheets) is a language used to describe the
+        presentation of web pages, including their layout, typography, colors,
+        and other visual elements. It works alongside HTML (Hypertext Markup
+        Language) and JavaScript to create dynamic and interactive web pages.
+      </p>
+      <p>
+        CSS separates the content of a web page from its presentation, which
+        makes it easier to maintain and update the design of a website. It
+        allows web designers to control the appearance of different elements of
+        a web page, such as text, images, and backgrounds, by defining style
+        rules that specify the properties of those elements.
+      </p>
+      <p>CSS can be applied to a web page in three ways:</p>
+      <ol>
+        <li>
+          <p>
+            Inline Styles: The styles are added directly to the HTML element
+            using the style attribute.
+          </p>
+        </li>
+        <li>
+          <p>
+            Internal Styles: The styles are defined in the head section of the
+            HTML document using the &lt;style&gt; tag.
+          </p>
+        </li>
+        <li>
+          <p>
+            External Styles: The styles are defined in a separate CSS file,
+            which is then linked to the HTML document using the &lt;link&gt;
+            tag.
+          </p>
+        </li>
+      </ol>
+      <p>
+        Web design involves the planning, creation, and maintenance of websites.
+        A good web design should be visually appealing, user-friendly, and
+        accessible on a variety of devices and browsers. It should also reflect
+        the brand identity and values of the website owner.
+      </p>
+      <p>Some important aspects of web design include:</p>
+      <ol>
+        <li>
+          <p>
+            Layout: The arrangement of elements on a web page, including the use
+            of grids, columns, and whitespace.
+          </p>
+        </li>
+        <li>
+          <p>
+            Typography: The choice of fonts, font sizes, and font styles used on
+            a web page.
+          </p>
+        </li>
+        <li>
+          <p>
+            Colors: The use of colors to create a visually appealing and
+            cohesive design.
+          </p>
+        </li>
+        <li>
+          <p>
+            Images and multimedia: The use of images, videos, and other
+            multimedia elements to enhance the content of a web page.
+          </p>
+        </li>
+        <li>
+          <p>
+            Navigation: The way users navigate through a website, including
+            menus, links, and buttons.
+          </p>
+        </li>
+        <li>
+          <p>
+            Accessibility: The design of a website to ensure that it is
+            accessible to all users, including those with disabilities.
+          </p>
+        </li>
+      </ol>
+      <p>
+        CSS plays a crucial role in web design by allowing designers to control
+        the appearance of elements on a web page and create visually appealing
+        and user-friendly designs.
+      </p>
+    </div>
+    <h1>CSS Syntax and Selectors</h1>
+    <div class="markdown prose w-full break-words dark:prose-invert light">
+      <p>
+        CSS syntax is relatively simple and easy to learn. It consists of a set
+        of rules that define the style properties of HTML elements. Each rule
+        consists of a selector, followed by one or more declarations enclosed in
+        curly braces.
+      </p>
+      <p>Here is an example of a CSS rule:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">h1</span> {
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">24px</span>;
+        <span class="hljs-attribute">color</span>: <span class="hljs-number">#333</span>;
+      }
+      </code></div></div></pre>
+      <p>
+        In this example, the selector is <code>h1</code>, which targets all
+        <code>&lt;h1&gt;</code> elements on the page. The two declarations
+        inside the curly braces specify the font size and color of the text for
+        all <code>&lt;h1&gt;</code> elements.
+      </p>
+      <p>
+        CSS selectors are used to target specific HTML elements on a web page.
+        There are several types of selectors, including:
+      </p>
+      <ol>
+        <li>
+          <p>
+            Element selectors: Selects all elements of a certain type. For
+            example, <code>h1</code> selects all
+            <code>&lt;h1&gt;</code> elements.
+          </p>
+        </li>
+        <li>
+          <p>
+            Class selectors: Selects elements with a specific class attribute.
+            For example, <code>.example</code> selects all elements with the
+            class "example".
+          </p>
+        </li>
+        <li>
+          <p>
+            ID selectors: Selects a single element with a specific ID attribute.
+            For example, <code>#main</code> selects the element with the ID
+            "main".
+          </p>
+        </li>
+        <li>
+          <p>
+            Attribute selectors: Selects elements with a specific attribute or
+            attribute value. For example, <code>[type="submit"]</code> selects
+            all elements with the attribute type="submit".
+          </p>
+        </li>
+        <li>
+          <p>
+            Pseudo-class selectors: Selects elements based on their state or
+            position. For example, <code>:hover</code> selects elements when the
+            user hovers over them.
+          </p>
+        </li>
+      </ol>
+      <p>
+        Selectors can be combined to create more specific rules. For example,
+        <code>h1.example</code> selects all <code>&lt;h1&gt;</code> elements
+        with the class "example".
+      </p>
+      <p>
+        CSS also supports several units of measurement, such as pixels (px), ems
+        (em), and percentages (%), which allow designers to specify the size and
+        spacing of elements on a web page.
+      </p>
+    </div>
+    <h1>CSS Text and Font properties</h1>
+    <div class="markdown prose w-full break-words dark:prose-invert light">
+      <p>
+        CSS provides a variety of text and font properties to control the
+        appearance of text on a web page. Here are some of the most commonly
+        used text and font properties:
+      </p>
+      <ol>
+        <li>
+          <code>font-family</code>: Specifies the font family used for the text.
+          It can be a specific font name, a generic font family (such as "serif"
+          or "sans-serif"), or a comma-separated list of font names and/or
+          generic font families.
+        </li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">body</span> {
+        <span class="hljs-attribute">font-family</span>: Arial, sans-serif;
+      }
+      </code></div></div></pre>
+      <ol start="2">
+        <li>
+          <code>font-size</code>: Specifies the font size for the text. It can
+          be a fixed size in pixels (px), or a relative size such as em or rem.
+        </li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">h1</span> {
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">2em</span>;
+      }
+      </code></div></div></pre>
+      <ol start="3">
+        <li>
+          <code>font-weight</code>: Specifies the boldness of the text. It can
+          be a numeric value from 100 to 900 or the keywords "normal" or "bold".
+        </li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">p</span> {
+        <span class="hljs-attribute">font-weight</span>: bold;
+      }
+      </code></div></div></pre>
+      <ol start="4">
+        <li>
+          <code>font-style</code>: Specifies the style of the text. It can be
+          "normal", "italic", or "oblique".
+        </li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">em</span> {
+        <span class="hljs-attribute">font-style</span>: italic;
+      }
+      </code></div></div></pre>
+      <ol start="5">
+        <li>
+          <code>text-decoration</code>: Specifies the decoration of the text. It
+          can be "none", "underline", "overline", "line-through", or a
+          combination of these values.
+        </li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">a</span> {
+        <span class="hljs-attribute">text-decoration</span>: none;
+      }
+      
+      <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:hover</span> {
+        <span class="hljs-attribute">text-decoration</span>: underline;
+      }
+      </code></div></div></pre>
+      <ol start="6">
+        <li>
+          <code>text-align</code>: Specifies the horizontal alignment of the
+          text. It can be "left", "right", "center", or "justify".
+        </li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">h1</span> {
+        <span class="hljs-attribute">text-align</span>: center;
+      }
+      </code></div></div></pre>
+      <ol start="7">
+        <li>
+          <code>line-height</code>: Specifies the height of each line of text.
+          It can be a fixed size in pixels (px), or a relative size such as em
+          or rem.
+        </li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">p</span> {
+        <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.5em</span>;
+      }
+      </code></div></div></pre>
+      <p>
+        By using these properties, web designers can create visually appealing
+        and readable text on their web pages.
+      </p>
+    </div>
+    <h1>CSS colour and background properties</h1>
+    <div class="markdown prose w-full break-words dark:prose-invert light">
+      <p>
+        CSS provides a variety of color and background properties to control the
+        appearance of the colors and backgrounds on a web page. Here are some of
+        the most commonly used color and background properties:
+      </p>
+      <ol>
+        <li><code>color</code>: Specifies the color of the text.</li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">body</span> {
+        <span class="hljs-attribute">color</span>: <span class="hljs-number">#333</span>;
+      }
+      </code></div></div></pre>
+      <ol start="2">
+        <li>
+          <code>background-color</code>: Specifies the background color of an
+          element.
+        </li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">body</span> {
+        <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#fff</span>;
+      }
+      </code></div></div></pre>
+      <ol start="3">
+        <li>
+          <code>opacity</code>: Specifies the opacity of an element. The value
+          ranges from 0.0 (completely transparent) to 1.0 (completely opaque).
+        </li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">div</span> {
+        <span class="hljs-attribute">opacity</span>: <span class="hljs-number">0.5</span>;
+      }
+      </code></div></div></pre>
+      <ol start="4">
+        <li>
+          <code>background-image</code>: Specifies the background image of an
+          element.
+        </li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">body</span> {
+        <span class="hljs-attribute">background-image</span>: <span class="hljs-built_in">url</span>(<span class="hljs-string">"bg.jpg"</span>);
+      }
+      </code></div></div></pre>
+      <ol start="5">
+        <li>
+          <code>background-repeat</code>: Specifies how the background image
+          should be repeated. It can be set to "repeat" (default), "no-repeat",
+          "repeat-x", or "repeat-y".
+        </li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">body</span> {
+        <span class="hljs-attribute">background-repeat</span>: no-repeat;
+      }
+      </code></div></div></pre>
+      <ol start="6">
+        <li>
+          <code>background-position</code>: Specifies the starting position of
+          the background image.
+        </li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">body</span> {
+        <span class="hljs-attribute">background-position</span>: center;
+      }
+      </code></div></div></pre>
+      <ol start="7">
+        <li>
+          <code>background-size</code>: Specifies the size of the background
+          image. It can be set to "auto", "cover", or "contain".
+        </li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">body</span> {
+        <span class="hljs-attribute">background-size</span>: cover;
+      }
+      </code></div></div></pre>
+      <ol start="8">
+        <li><code>border-color</code>: Specifies the color of the border.</li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">div</span> {
+        <span class="hljs-attribute">border-color</span>: <span class="hljs-number">#999</span>;
+      }
+      </code></div></div></pre>
+      <ol start="9">
+        <li><code>border-width</code>: Specifies the width of the border.</li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">div</span> {
+        <span class="hljs-attribute">border-width</span>: <span class="hljs-number">1px</span>;
+      }
+      </code></div></div></pre>
+      <p>
+        By using these properties, web designers can create visually appealing
+        and colorful backgrounds on their web pages.
+      </p>
+    </div>
+    <h1>CSS box model (margin, padding, border)</h1>
+    <div class="markdown prose w-full break-words dark:prose-invert light">
+      <p>
+        The CSS box model is used to define the layout and spacing of elements
+        on a web page. The box model consists of four components: content,
+        padding, border, and margin. Here is an overview of each component:
+      </p>
+      <ol>
+        <li>
+          <p>
+            Content: This is the area where the actual content of the element is
+            displayed. It is defined by the height and width of the element.
+          </p>
+        </li>
+        <li>
+          <p>
+            Padding: This is the area between the content and the border. It is
+            used to create space around the content, and is defined by the
+            padding property. Padding can be set on all four sides (top, right,
+            bottom, left) or individually.
+          </p>
+        </li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">div</span> {
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+      }
+      </code></div></div></pre>
+      <ol start="3">
+        <li>
+          Border: This is the area around the padding and content, and is
+          defined by the border property. Borders can be set on all four sides
+          or individually, and can have different styles, widths, and colors.
+        </li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">div</span> {
+        <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#ccc</span>;
+      }
+      </code></div></div></pre>
+      <ol start="4">
+        <li>
+          Margin: This is the area outside the border, and is used to create
+          space between elements. Margins can be set on all four sides or
+          individually.
+        </li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">div</span> {
+        <span class="hljs-attribute">margin</span>: <span class="hljs-number">20px</span>;
+      }
+      </code></div></div></pre>
+      <p>
+        It's important to note that the width and height of an element are
+        affected by the padding and border properties. For example, if you set a
+        width of 100px and a border of 1px, the actual width of the element will
+        be 102px (100px + 1px for the left border + 1px for the right border).
+      </p>
+      <p>
+        By using the box model properties, web designers can control the spacing
+        and layout of elements on their web pages.
+      </p>
+    </div>
+    <h1>CSS positioning (static, relative, absolute, fixed)</h1>
+    <div class="markdown prose w-full break-words dark:prose-invert light">
+      <p>
+        CSS provides four types of positioning for elements on a web page:
+        static, relative, absolute, and fixed. Here is an overview of each type:
+      </p>
+      <ol>
+        <li>
+          Static: This is the default positioning for all elements. In this
+          mode, the element is positioned according to the normal flow of the
+          document. Any other positioning properties (such as top, bottom, left,
+          or right) have no effect.
+        </li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">div</span> {
+        <span class="hljs-attribute">position</span>: static;
+      }
+      </code></div></div></pre>
+      <ol start="2">
+        <li>
+          Relative: In this mode, the element is positioned relative to its
+          normal position in the document. It can be moved up, down, left, or
+          right using the top, bottom, left, and right properties. Other
+          elements on the page are not affected by the element's position.
+        </li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">div</span> {
+        <span class="hljs-attribute">position</span>: relative;
+        <span class="hljs-attribute">top</span>: <span class="hljs-number">20px</span>;
+        <span class="hljs-attribute">left</span>: <span class="hljs-number">30px</span>;
+      }
+      </code></div></div></pre>
+      <ol start="3">
+        <li>
+          Absolute: In this mode, the element is positioned relative to the
+          nearest positioned ancestor element. If there are no positioned
+          ancestors, the element is positioned relative to the initial
+          containing block (usually the body element). The element can be moved
+          to any position on the page using the top, bottom, left, and right
+          properties.
+        </li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">div</span> {
+        <span class="hljs-attribute">position</span>: absolute;
+        <span class="hljs-attribute">top</span>: <span class="hljs-number">50px</span>;
+        <span class="hljs-attribute">left</span>: <span class="hljs-number">100px</span>;
+      }
+      </code></div></div></pre>
+      <ol start="4">
+        <li>
+          Fixed: In this mode, the element is positioned relative to the browser
+          window, and will remain in the same position even if the page is
+          scrolled. The element can be moved to any position on the page using
+          the top, bottom, left, and right properties.
+        </li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">div</span> {
+        <span class="hljs-attribute">position</span>: fixed;
+        <span class="hljs-attribute">top</span>: <span class="hljs-number">10px</span>;
+        <span class="hljs-attribute">right</span>: <span class="hljs-number">10px</span>;
+      }
+      </code></div></div></pre>
+      <p>
+        By using these positioning properties, web designers can create complex
+        layouts and positioning effects on their web pages.
+      </p>
+    </div>
+    <h1>CSS float and clear</h1>
+    <div class="markdown prose w-full break-words dark:prose-invert light">
+      <p>
+        CSS float and clear are used to control the layout of elements on a web
+        page. Here's an overview of each property:
+      </p>
+      <ol>
+        <li>
+          Float: This property is used to move an element to the left or right
+          side of its container. When an element is floated, it is taken out of
+          the normal flow of the document, and other elements will flow around
+          it. Float is often used to create multi-column layouts.
+        </li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">img</span> {
+        <span class="hljs-attribute">float</span>: left;
+      }
+      </code></div></div></pre>
+      <ol start="2">
+        <li>
+          Clear: This property is used to control the behavior of elements after
+          a floated element. When an element is cleared, it will be moved below
+          the floated element. Clear can be set to "left", "right", "both", or
+          "none".
+        </li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-tag">p</span> {
+        <span class="hljs-attribute">clear</span>: both;
+      }
+      </code></div></div></pre>
+      <p>
+        By using float and clear, web designers can create complex layouts that
+        include elements that float around each other or elements that are
+        positioned below floated elements. It's important to note that floated
+        elements can cause problems with the layout of a page, and web designers
+        need to be careful when using these properties.
+      </p>
+    </div>
+    <h1>CSS flexbox and grid layout</h1>
+    <div class="markdown prose w-full break-words dark:prose-invert light">
+      <p>
+        CSS flexbox and grid layout are two powerful tools that web designers
+        can use to create complex and responsive layouts on web pages.
+      </p>
+      <ol>
+        <li>
+          Flexbox: Flexbox is a one-dimensional layout system that allows
+          elements to be aligned and distributed within a container. With
+          flexbox, web designers can easily create responsive layouts that
+          adjust to different screen sizes and devices. Flexbox works by
+          defining a flexible container (the "flexbox"), and then using a set of
+          properties to define how the child elements are positioned and sized
+          within that container.
+        </li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-class">.container</span> {
+        <span class="hljs-attribute">display</span>: flex;
+        <span class="hljs-attribute">justify-content</span>: center;
+        <span class="hljs-attribute">align-items</span>: center;
+      }
+      
+      <span class="hljs-selector-class">.box</span> {
+        <span class="hljs-attribute">flex</span>: <span class="hljs-number">1</span>;
+      }
+      </code></div></div></pre>
+      <p>
+        In this example, the container element is set to display as a flex
+        container, with the child elements (the boxes) set to expand and fill
+        the available space using the <code>flex: 1</code> property. The
+        <code>justify-content</code> and <code>align-items</code> properties are
+        used to center the boxes within the container.
+      </p>
+      <ol start="2">
+        <li>
+          Grid Layout: Grid Layout is a two-dimensional layout system that
+          allows elements to be positioned and aligned along both rows and
+          columns. With Grid Layout, web designers can create complex and
+          dynamic layouts that adjust to different screen sizes and devices.
+          Grid Layout works by defining a grid container (the "grid"), and then
+          using a set of properties to define the size and position of the grid
+          cells within that container.
+        </li>
+      </ol>
+      <p>Example:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-selector-class">.grid-container</span> {
+        <span class="hljs-attribute">display</span>: grid;
+        <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-number">1</span>fr <span class="hljs-number">1</span>fr <span class="hljs-number">1</span>fr;
+        <span class="hljs-attribute">grid-template-rows</span>: <span class="hljs-number">100px</span> <span class="hljs-number">200px</span>;
+      }
+      
+      <span class="hljs-selector-class">.grid-item</span> {
+        <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#ccc</span>;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span>;
+      }
+      
+      <span class="hljs-selector-class">.item-a</span> {
+        <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">1</span> / <span class="hljs-number">3</span>;
+        <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">1</span>;
+      }
+      
+      <span class="hljs-selector-class">.item-b</span> {
+        <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">2</span> / <span class="hljs-number">4</span>;
+        <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">2</span>;
+      }
+      </code></div></div></pre>
+      <p>
+        In this example, the container element is set to display as a grid
+        container, with the grid cells defined using the
+        <code>grid-template-columns</code> and
+        <code>grid-template-rows</code> properties. The child elements (the grid
+        items) are positioned within the grid using the
+        <code>grid-column</code> and <code>grid-row</code> properties.
+      </p>
+      <p>
+        Both Flexbox and Grid Layout are powerful tools for web designers, and
+        can be used to create a wide variety of layouts and designs on web
+        pages. However, they can be complex and take some time to master, so
+        it's important to start with simple layouts and work up to more complex
+        designs.
+      </p>
+    </div>
+    <h1>CSS responsive design and media queries</h1>
+    <div class="markdown prose w-full break-words dark:prose-invert light">
+      <p>
+        CSS responsive design is a technique that allows web designers to create
+        websites that adapt and adjust to different screen sizes and devices.
+        This is accomplished using a combination of flexible layouts, flexible
+        images and media, and media queries.
+      </p>
+      <p>
+        Media queries are CSS rules that allow web designers to apply different
+        styles to a page based on the characteristics of the device or screen
+        size that the page is being viewed on. Media queries typically include
+        one or more conditions that specify the maximum or minimum width or
+        height of the screen, as well as other characteristics like the screen's
+        orientation or resolution.
+      </p>
+      <p>Here's an example of a simple media query:</p>
+      <pre><div class="bg-black mb-4 rounded-md"><div class="flex items-center relative text-gray-200 bg-gray-800 px-4 py-2 text-xs font-sans"><span class="">css</span><button class="flex ml-auto gap-2"><svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="h-4 w-4" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>Copy code</button></div><div class="p-4 overflow-y-auto"><code class="!whitespace-pre hljs language-css"><span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-number">600px</span>) {
+        <span class="hljs-selector-tag">body</span> {
+          <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+        }
+      }
+      </code></div></div></pre>
+      <p>
+        In this example, the <code>@media</code> rule is used to specify a set
+        of styles that should be applied when the screen size is less than or
+        equal to 600 pixels. The <code>body</code> element is targeted, and its
+        font size is set to 14 pixels.
+      </p>
+      <p>
+        Web designers can use media queries to adjust the layout, typography,
+        images, and other design elements of a page to create a better
+        experience for users on different devices. For example, a responsive
+        design might include different layouts for desktop and mobile devices,
+        or different font sizes and line spacing for smaller screens.
+      </p>
+      <p>
+        By using media queries in combination with flexible layouts and flexible
+        images and media, web designers can create websites that look great and
+        function well on a wide range of devices, from desktop computers to
+        smartphones and tablets.
+      </p>
+    </div>
+    <h1>
+      Best practices and tips for writing efficient and maintainable CSS code
+    </h1>
+    <div class="markdown prose w-full break-words dark:prose-invert light">
+      <p>
+        Writing efficient and maintainable CSS code is an important part of
+        creating high-quality, scalable web applications. Here are some best
+        practices and tips for writing CSS that is easy to read, easy to
+        maintain, and performs well:
+      </p>
+      <ol>
+        <li>
+          <p>
+            Use consistent and meaningful class and ID names: Use descriptive
+            and meaningful class and ID names that make it easy to understand
+            the purpose of each element. Avoid using generic class names like
+            "box" or "content" that can be confusing and difficult to maintain.
+          </p>
+        </li>
+        <li>
+          <p>
+            Follow a consistent code structure: Use a consistent code structure
+            and formatting that makes it easy to read and understand the CSS
+            code. Use proper indentation, comments, and white space to organize
+            the code and make it easy to navigate.
+          </p>
+        </li>
+        <li>
+          <p>
+            Keep CSS separate from HTML: Keep CSS code separate from HTML code
+            by using external CSS files. This makes it easier to update and
+            maintain the CSS code, and also helps to reduce the size of HTML
+            files.
+          </p>
+        </li>
+        <li>
+          <p>
+            Use shorthand properties: Use shorthand properties to reduce the
+            size of your CSS code. For example, instead of using separate
+            properties for <code>border-width</code>, <code>border-style</code>,
+            and <code>border-color</code>, you can use the shorthand
+            <code>border</code> property to set all three at once.
+          </p>
+        </li>
+        <li>
+          <p>
+            Use efficient selectors: Use efficient selectors that target
+            specific elements and avoid using complex selectors that can slow
+            down the rendering of the page. Use class and ID selectors instead
+            of element selectors whenever possible.
+          </p>
+        </li>
+        <li>
+          <p>
+            Minimize the use of !important: Avoid using the
+            <code>!important</code> keyword, as it can make your CSS code
+            difficult to maintain and override.
+          </p>
+        </li>
+        <li>
+          <p>
+            Use CSS preprocessors: Use CSS preprocessors like Sass or Less to
+            write more efficient and maintainable CSS code. Preprocessors allow
+            you to use variables, functions, and other features that are not
+            available in standard CSS.
+          </p>
+        </li>
+        <li>
+          <p>
+            Test your CSS code: Test your CSS code in multiple browsers and
+            devices to ensure that it displays correctly and performs well on
+            all platforms.
+          </p>
+        </li>
+      </ol>
+      <p>
+        By following these best practices and tips, you can write CSS code that
+        is efficient, maintainable, and scalable, making it easier to update and
+        maintain your web applications over time.
+      </p>
+    </div>
+  </body>
+</html>
